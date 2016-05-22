@@ -1,0 +1,80 @@
+/*Developed by ZIS*/
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+body{
+  background-color: #FF7676;
+}
+.timeline{
+  padding: 20px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.timelineBar{
+  list-style: none;
+  position: relative;
+  padding: 0;
+  margin: 0;
+
+
+}
+.timelineBar li{
+  margin-top: 60px;
+}
+.timelineBar li i{
+  width: 50px;
+  height: 50px;
+  display: block;
+  font-size: 35px;
+  text-align: center;
+  background-color: #FF7676;
+  color: #F6F49D;
+
+}
+.timelineBar:after{
+  content: '';
+  width: 1px;
+  height: 100%;
+  background-color: #ddd;
+  position: absolute;
+  top:4px;
+  left: 25px;
+  z-index: -1;
+}
+/*=============COMMENT=========*/
+.comment {
+  font-family: sans-serif;
+  margin-top: -65px;
+  margin-left: 70px;
+  padding: 15px;
+  font-size: 16px;
+   width: 500px;
+   height: 50px;
+   background: #466C95;
+   position: relative;
+   -moz-border-radius:    5px;
+   -webkit-border-radius: 5px;
+   border-radius:         5px;
+   border: 1px solid #F6F49D;
+}
+.comment:before {
+   content:"";
+   position: absolute;
+   right: 100%;
+   top: 26px;
+   width: 0;
+   height: 0;
+   border-top: 13px solid transparent ;
+   border-right: 26px solid #466C95;
+   border-bottom: 13px solid transparent;
+}
